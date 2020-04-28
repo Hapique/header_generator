@@ -1,0 +1,25 @@
+name: header_generator
+version: "1.0"
+author: flo et yo
+about: generate header file for file or directory
+args:
+  - directory:
+      short: d
+      long: directory
+      value_name: DIR
+      help: Sets the source directory
+      takes_value: true
+  - file:
+      short: f
+      long: file
+      value_name: FILE
+      help: Sets the source files to use
+      multiple: true
+      takes_value: true
+  - recusive:
+      short: r
+      help: Sets recursive option for directory
+
+  - ifndef:
+      long: ifndef
+      help: Uses the ifndef directive instead of pragma
